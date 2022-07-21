@@ -8,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
 
+<<<<<<< Updated upstream
     @Test void task6Test1() {
         // Arrange
         App classBeingTested = new SimpleFunctions();
@@ -30,4 +31,25 @@ class AppTest {
         assertIterableEquals(expected, result);
     }
 
+=======
+    @Test void task2Test() {
+        // Arrange
+        App SimpleFunctions = new App();
+
+        List<String> data = Arrays.asList("Hello", "world");
+        List<String> data1 = Arrays.asList("Hello", "w");
+        List<String> data2 = Arrays.asList();
+        List<String> expected = Arrays.asList("ello", "orld"); 
+        List<String> expected1 = Arrays.asList("ello"); 
+        List<String> expected2 = Arrays.asList(); 
+        // Act
+        List<String> result = SimpleFunctions.Task1(data);
+        List<String> result1 = SimpleFunctions.Task1(data);
+        List<String> result2 = SimpleFunctions.Task2(data);
+        // Assert
+        assertIterableEquals(expected, result);
+        assertIterableEquals(expected1, result1);
+        assertIterableEquals(expected2, result2); 
+    }
+>>>>>>> Stashed changes
 }
