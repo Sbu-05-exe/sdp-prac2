@@ -7,4 +7,27 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
+
+    @Test void task6Test1() {
+        // Arrange
+        App classBeingTested = new SimpleFunctions();
+        List<Integer> data = Arrays.asList(102, 394, -10, 1002);
+        List<Integer> expected = Arrays.asList(200, 400, 0, 1100);
+        // Act
+        List<Integer> result = classBeingTested.Task6(data);
+        // Assert
+        assertIterableEquals(expected, result);
+    }
+
+     @Test void task6Test2() {
+        // Arrange
+        App classBeingTested = new SimpleFunctions();
+        List<Integer> data = Arrays.asList(0, 101, 57, 2000);
+        List<Integer> expected = Arrays.asList(0, 200, 100, 200);
+        // Act
+        List<Integer> result = classBeingTested.Task6(data);
+        // Assert
+        assertIterableEquals(expected, result);
+    }
+
 }
